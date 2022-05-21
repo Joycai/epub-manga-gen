@@ -24,14 +24,14 @@ def write_file(file_name: str, content: str):
 
 
 def conv_landscape(start: int, end: int, template_loader: ImageTemplateLoader):
-    for i in range(start, end):
+    for i in range(start, end + 1):
         file_idx = build_id(i)
         content = template_loader.build_html(file_idx, True)
         write_file('Section%s.xhtml' % file_idx, content)
 
 
 def conv(start: int, end: int, template_loader: ImageTemplateLoader):
-    for i in range(start, end):
+    for i in range(start, end + 1):
         file_idx = build_id(i)
         content = template_loader.build_html(file_idx)
         write_file('Section%s.xhtml' % file_idx, content)
