@@ -1,0 +1,13 @@
+body.fullpage {
+  text-align: center;
+  padding: 0pt;
+  margin: 0pt;
+  page-break-after: always;
+}
+.image {
+
+}
+.vh {
+  height: 100vh;
+  width: 100%;
+}

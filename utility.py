@@ -5,6 +5,11 @@ from loader import ImageTemplateLoader
 
 target_dir = os.path.join("dist", "pages")
 
+def clean_work_dir(path:str):
+    for root, dirs, files in os.walk(path):
+        for file in files:
+            os.remove(os.path.join(root, file))
+
 
 def build_id(i: int, length: int = 3) -> str:
     prefix = ""

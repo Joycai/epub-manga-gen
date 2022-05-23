@@ -4,13 +4,13 @@ from typing import Callable, Union
 
 from utility import write_file
 
-xhtml_path = ""
+xhtml_path = "/Users/caizhengxu/Downloads/temp/xml"
 
 
 def process_xhtml(file_name: str, file_path: str):
     print(file_name)
-    width = "1024"
-    height = "768"
+    width = "768"
+    height = "1024"
     with open(file_path, encoding="utf-8") as f:
         content = f.read()
         # viewport
